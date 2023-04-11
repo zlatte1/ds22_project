@@ -1,0 +1,2 @@
+ML_models_03_function_ver_3_keras 
+https://colab.research.google.com/drive/1NU4sotZdnboYyikoe2iQAg1bdtWBOyVI#scrollTo=a1d5fb70
