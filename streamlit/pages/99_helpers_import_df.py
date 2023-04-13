@@ -1,15 +1,14 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv("data.csv")
+df = pd.read_csv("./data/data.csv")
 
 
 
 
 def main():
-    st.title("Graph")
+    st.title("Load data from df")
     st.write(df.head())
 
 

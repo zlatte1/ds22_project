@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import joblib
 
-model = joblib.load("model_rf.joblib")
+model = joblib.load("./models/model_rf.joblib")
 
 option = st.sidebar.selectbox("Select an option", ["Load Model"])
 
