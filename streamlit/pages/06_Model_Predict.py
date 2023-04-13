@@ -6,7 +6,7 @@ import time
 
 #Load model, Should change to the best performing later on.
 model_rf = joblib.load("./models/model_rf.joblib")
-model_dt = joblib.load("./models/model_dt.joblib")
+model_dt = joblib.load("./models/model_dt_vot.joblib")
 
 # Display input form
 st.subheader("Enter Details about the Movie to predict Rating")
@@ -128,13 +128,15 @@ def main():
             prediction_dt = model_dt.predict([[year, month, runtime, cert_G, cert_NC_17, cert_PG, cert_PG-13, cert_R, cert_TV_14, cert_TV_G, cert_TV_MA, cert_TV_PG, cert_TV_Y7 , d1_top50, d2_top50, s1_top1000, s2_top1000, s3_top1000, s4_top1000, genre_Action, genre_Adventure, genre_Animation, genre_Biography, genre_Comedy, genre_Crime, genre_Drama, genre_Family, genre_Fantasy, genre_History, genre_Horror, genre_Music, genre_Musical, genre_Mystery, genre_Romance, genre_SciFi, genre_Sport, genre_Thriller, genre_War, genre_Western, continent_Africa, continent_Asia, continent_Europe, continent_North_America, continent_Oceania, continent_South_America, budget, income, profit, roi]])
 
             # Remove the spinner animation and display the prediction results
-            st.success('Prediction complete!')
+
             data = {
-                "Model": ["Random Forest", "Decision Tree"],
+                "Model": ["Random Forest", "Decision Tree Voting"],
                 "Rating": [prediction_rf[0], prediction_dt[0]]
             }
-            df = pd.DataFrame(data)
+            df = pd.DataFrame(data, index=None)
             df["Rating"] = df["Rating"].round(1)
+           
+   
             st.write(df)
 
 
