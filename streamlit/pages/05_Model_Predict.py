@@ -5,8 +5,8 @@ import joblib
 import time
 
 #Load model, Should change to the best performing later on.
-model_rf = joblib.load("./models/model_rf.joblib")
-model_dt = joblib.load("./models/model_dt_vot.joblib")
+model_rf = joblib.load("./streamlit/models/model_rf.joblib")
+model_dt = joblib.load("./streamlit/models/model_dt_vot.joblib")
 
 # Display input form
 st.subheader("Fill in form or choose one of the pre-programmed to the left")

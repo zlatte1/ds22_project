@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 def main():
     st.title("Conclusion")
@@ -13,5 +14,7 @@ def main():
     st.write("out of a buisness/ client perspective it would make more sense to predict income or ROI ")
     st.write("and what features has the highest co-eff to this")
 
+    image_0 = Image.open('./images/conclusion_pred.png')
+    st.image(image_0)
 if __name__ == '__main__':
     main()

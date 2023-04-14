@@ -1,8 +1,8 @@
 import streamlit as st
 from PIL import Image
-image = Image.open('./images/model_dev_02.png')
-image_02 = Image.open('./images/model_dev_03.png')
-image_03 = Image.open('./images/model_dev_04.png')
+image = Image.open('./streamlit/images/model_dev_02.png')
+image_02 = Image.open('./streamlit/images/model_dev_03.png')
+image_03 = Image.open('./streamlit/images/model_dev_04.png')
 
 
 
