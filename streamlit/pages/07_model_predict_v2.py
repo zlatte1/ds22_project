@@ -137,7 +137,7 @@ def make_prediction(year, month, runtime, cert_G, cert_NC_17, cert_PG, cert_PG_1
 #movie_select = "Select a movie..."
 # Define the initial movie selection and movie names list
 # Define the initial movie selection and movie names list
-movie_names = ["The Shawshank Redemption", "A Man Called Otto"]
+movie_names = ["The Shawshank Redemption",  "Gladiator", "Gladiator 2", "A Man Called Otto"]
 movie_select = None
 
 # Add the movie buttons and update the selected movie dynamically
@@ -154,6 +154,18 @@ if movie_select:
         profit = income - budget
         roi = profit / budget
         make_prediction(1994, 10, 142, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 , 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, budget, income, profit, roi)
+    elif movie_select == "Gladiator":
+        budget = 103000000
+        income = 187705427
+        profit = income - budget
+        roi = profit / budget
+        make_prediction(2000, 5, 155, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 , 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, budget, income, profit, roi)
+    elif movie_select == "Gladiator 2":
+        budget = 71491880
+        roi = 0.6490
+        income = budget * (1 + roi)
+        profit = income - budget
+        make_prediction(2023, 11, 111, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 , 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, budget, income, profit, roi)
     elif movie_select == "A Man Called Otto":
         budget = 50000000
         income = 64263300
