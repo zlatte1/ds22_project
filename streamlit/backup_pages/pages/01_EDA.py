@@ -28,7 +28,7 @@ def main():
     st.write("Type of columns")
     st.write(col_types)
     
-    st.write("check for null values in all columns")
+    st.write("Null values")
     st.write(df.isnull().sum())
 
 if __name__ == '__main__':

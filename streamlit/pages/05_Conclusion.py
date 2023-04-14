@@ -10,7 +10,8 @@ def main():
     st.write("Data-nice-to-have:")
     st.write("film_company:")
     st.write("ThougtS:")
-    st.write(":")
+    st.write("out of a buisness/ client perspective it would make more sense to predict income or ROI ")
+    st.write("and what features has the highest co-eff to this")
 
 if __name__ == '__main__':
     main()
