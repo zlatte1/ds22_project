@@ -21,7 +21,7 @@ black_bg = '#0e1116'
 def main():
     st.title("EDA")
     st.write("")
-    image = Image.open('./images/eda.png')
+    image = Image.open('../images/eda.png')
     st.image(image)
 
     st.write("")
@@ -34,8 +34,8 @@ def main():
     st.write("")
 
     # DATA
-    data = pd.read_csv("./data/movies.csv")
-    data_pro = pd.read_csv("./data/new_dataset.csv")
+    data = pd.read_csv("../data/movies.csv")
+    data_pro = pd.read_csv("../data/movies_semi_cleaned.csv")
 
 
     # CORRELATION MATRIX

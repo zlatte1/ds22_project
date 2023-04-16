@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-image = Image.open('./streamlit/images/model_dev_01.png')
+image = Image.open('../images/model_dev_01.png')
 
 
 list_of_bullets = [
